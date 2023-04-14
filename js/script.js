@@ -14,9 +14,7 @@ if(close){
 // get product details
 let mainImg= document.getElementById("mainImg")
 let selectedImg=document.querySelectorAll(".products .item img")
-
 selectedImg.forEach((item)=>{item.addEventListener("click",()=>{
-    // console.log(item)
     window.location.href="productdetail.html"
     mainImg.src=item.src
 })})
