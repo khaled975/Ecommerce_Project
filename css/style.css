@@ -411,7 +411,6 @@ header ul li a:not(#last,.close):hover::before{
     padding: 5px 10px;
     flex: 1;
     border-radius: 4px;
-    width: 100%;
     outline: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -841,7 +840,101 @@ footer .copyright{
 #cart-landing{
     background-image: url("../images/about/banner.png");
 }
-
+/* cart-products */
+.cart-products{
+    overflow-x: scroll;
+}
+.cart-products table{
+    /* width: 100%; */
+    text-align: center;
+    border-collapse: collapse;
+    /* table-layout: fixed; */
+    /* overflow-x: auto; */
+} 
+.cart-products table td{
+    padding: 0 20px;
+} 
+.cart-products table thead{
+    border-top:1px solid var(--border-color) ;
+    border-bottom:1px solid var(--border-color) ;
+} 
+.cart-products table thead th{
+    padding: 15px 0;
+    text-transform: uppercase;
+} 
+.cart-products table tbody tr td{
+    padding-top: 15px;
+    
+}  
+.cart-products table tbody tr td input{
+    width: 79px;
+    padding: 10px 5px 10px 15px;
+}  
+.cart-products table i{
+    cursor: pointer;
+    transition: var(--mainTrans);
+} 
+.cart-products table i:hover{
+    color: #ef3636;
+} 
+.cart-products table img{
+    max-width: 100%;
+    width: 100%;
+} 
+.cart-products table div{
+    margin: auto;
+    width: 80px;
+} 
+/* coupon */
+.coupon{
+    display: flex;
+    gap: 50px;
+}
+.coupon div{
+    width: 50%;
+}
+.coupon div.apply form{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+.btn{
+    background-color: var(--styleFont);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.coupon div.apply form input{
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+.coupon div:nth-child(2){
+    padding: 35px 25px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.coupon div:nth-child(2) table{
+    border-collapse: collapse;
+}
+.coupon div:nth-child(2) table tr{
+    border: 1px solid var(--border-color);
+}
+.coupon div:nth-child(2) table td{
+    border: 1px solid var(--border-color);
+    width: 50%;
+    padding:8px;
+}
 /* object-fit: ; */
 
 
@@ -972,7 +1065,15 @@ footer .copyright{
     .message .box .info {
         text-align: center;
     }
-
+    /* //////////cart page */
+    .coupon {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .coupon div {
+        width: 100%;
+    }
+    
 }
 @media (max-width:420px) {
     footer .content {
