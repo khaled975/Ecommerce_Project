@@ -626,11 +626,14 @@ footer .copyright{
     letter-spacing: 1.2px;
     word-spacing: 1.5px;
 }
-
 /* ///////////////////////////blog-page */
 #blog-sec{
     padding-left: 150px;
     padding-right: 150px;
+}
+#blog-sec .box{
+    display: flex;
+    flex-direction: column;
 }
 #blog-landing{
     background-image: url("../images/banner/b19.jpg");
@@ -845,11 +848,8 @@ footer .copyright{
     overflow-x: scroll;
 }
 .cart-products table{
-    /* width: 100%; */
     text-align: center;
     border-collapse: collapse;
-    /* table-layout: fixed; */
-    /* overflow-x: auto; */
 } 
 .cart-products table td{
     padding: 0 20px;
@@ -864,7 +864,6 @@ footer .copyright{
 } 
 .cart-products table tbody tr td{
     padding-top: 15px;
-    
 }  
 .cart-products table tbody tr td input{
     width: 79px;
@@ -935,14 +934,7 @@ footer .copyright{
     width: 50%;
     padding:8px;
 }
-/* object-fit: ; */
-
-
-
-
-
-
-
+/* /////////////////////////// responsive */
 @media (max-width:1070px) {
     .section-p1 {
         padding: 40px 30px ;
@@ -970,11 +962,9 @@ footer .copyright{
         flex-direction: column;
     }
     /* //////////blog page */
-
     #blog-sec {
         padding: 40px 30px;
     }
-
 }
 @media (max-width:768px) {
     header ul {
@@ -1073,11 +1063,9 @@ footer .copyright{
     .coupon div {
         width: 100%;
     }
-    
 }
 @media (max-width:420px) {
     footer .content {
         flex-direction: column;
     }
-    
 }

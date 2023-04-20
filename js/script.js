@@ -24,4 +24,3 @@ let imgs= document.querySelectorAll(".product-imgs div img")
 imgs.forEach((item)=>{item.addEventListener("click",()=>{
     mainImg.src=item.src
 })})
-
